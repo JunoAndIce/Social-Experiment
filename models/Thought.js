@@ -24,6 +24,7 @@ const thoughtSchema = new Schema(
   },
   {
     toJSON: {
+      // Include virtuals on conversion.
       virtuals: true,
     },
     id: false,

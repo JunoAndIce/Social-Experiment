@@ -24,6 +24,7 @@ const reactionSchema = new Schema(
   },
   {
     toJSON: {
+      // Runs getters when converting to document.
       getters: true,
     },
     id: false,
